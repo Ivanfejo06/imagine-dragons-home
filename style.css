@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "Imagine Font Medium";
+  src: url("fonts/Devil\ Breeze\ Medium.ttf");
+}
+@font-face {
+  font-family: "Imagine Font Light";
+  src: url("fonts/Devil\ Breeze\ Light.ttf");
+}
+@font-face {
+  font-family: "Imagine Font Bold";
+  src: url("fonts/Devil\ Breeze\ Bold.ttf");
+}
+
+.right{
+  display: flex;
+  float:right;
+  text-align: right;
+}
+.left{
+  display: flex;
+  float: left;
+}
+.logo{
+  width: 47.45%;
+}
+.centrar{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fondo{
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image:url("img/FB_IMG_1576747634955.jpg");
+  height: 400px;
+  width: 100%;
+}
+.fondo2{
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image:url("img/gif.gif");
+  background-size: 100%;
+  height: 500px;
+  width: 100%;
+}
+.photo{
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.disco{
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+.top{
+  padding: 20px;
+}
+
+.titulo{
+  font-family: Imagine Font Light;
+  padding-top: 10px;
+}
+.row{
+  width: 99%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.barra{
+  border: crimson solid 2px;
+  height: 1px;
+  width: 60%;
+}
+.info{
+  width: 50%;
+}
+.texto{
+  width: 60%;
+  padding: 10px;
+}
+.descripcion{
+  color: white;
+  padding: 10px;
+  padding-top: 30px;
+}
+.espacio{
+  height: 50px;
+  width: 100%;
+}
+
+
+.sticky{
+  position: fixed;
+  top: 0;
+}
+#dos:not(.sticky){
+  position: absolute;
+}
+#dos {
+    background-color: black;
+    overflow: hidden;
+    font-family: Imagine Font Medium;
+    padding: 10px;
+    padding-top: 15px;
+    width: 100%;
+  }
+#dos .stay{
+    color: crimson;
+  }
+#dos a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+#dos a:link{
+    text-decoration: none;
+}
+#dos a:hover {
+    color:crimson;
+  }
+#dos a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+  .wrapper{
+    display: flex;
+    max-width: 1020px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+
+
+  .integrantes{
+    position:relative;
+    margin:auto;
+    width: 100%;
+    background-color: #ebebe2;
+    display: flex;
+  }
+  .band{
+    position:relative;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .band:hover .integrantes{
+    transition: 3s ease;
+    background-color: black;
+  }
+  .band:hover{
+    transition: 1s ease;
+    background-color: rgb(68, 65, 65);
+  }
+  .band:hover img{
+    opacity: 0%;
+    transition: 1s ease;
+  }
+  .nombre{
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    font-family: imagine font medium;
+    opacity: 0%;
+  }
+  .data{
+    position: absolute;
+    top: 20%;
+    opacity: 0%;
+  }
+  .band:hover .nombre{
+    transition: 1s ease;
+    opacity: 100%;
+    color: white;
+    padding: 10px;
+  }
+  .band:hover .data{
+    transition: 1s ease;
+    opacity: 100%;
+    color: white;
+    padding: 40px;
+  }
+  
+
+
+
+
+
+  .show{
+    width: 70%;
+    display: flex;
+    height: 100px;
+    
+    padding-top: 10px;
+  }
+  .date{
+    background-color: rgb(179, 15, 47);
+    width: 20%;
+    text-align: center;
+  }
+  .date p{
+    padding-top: 5%;
+    font-family: imagine font Bold;
+    font-size: 30px;
+  }
+  .informacion{
+    font-size:medium;
+    width: 80%;
+    background-color: white;
+    color: black;
+    display: flex;
+  }
+  .ciudad{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    width: 30%;
+    font-family: imagine font bold;
+  }
+  .lugar{
+    padding-top: 10px;
+    width: 40%;
+    font-family: imagine font medium;
+  }
+  .tickets{
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    width: 30%;
+    font-family: imagine font bold;
+  }
+
+
+
+  .curiosidad{
+    width: 80%;
+    display: flex;
+  }
+  .numero{
+    background-color: rgb(179, 15, 47);
+    width: 10%;
+    font-family: imagine font medium;
+    padding-top: 1%;
+  }
+  .dato{
+    border: 2px crimson solid;
+    border-left: 1px crimson solid;
+    width: 90%;
+  }
+  .dato p{
+    width: 90%;
+  }
